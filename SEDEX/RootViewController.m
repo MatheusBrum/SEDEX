@@ -5,13 +5,14 @@
 //  Created by Matheus Brum on 28/06/11.
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
-
+#import "CelulaSedex.h"
+#import "MBProgressHUD.h"
 #import "RootViewController.h"
-
+#import "JSONKit.h"
 #import "DetailViewController.h"
 
 @implementation RootViewController
-
+@synthesize codigo;
 
 - (id)initWithCoder:(NSCoder *)coder
 {
@@ -32,6 +33,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.tableView.allowsSelection=NO;
+    superArray=[[NSMutableArray alloc]init];
+    self.title=@"AppleManiacos";
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -50,6 +54,25 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.navigationController.view animated:YES];
+	hud.labelText = @"Loading";
+	
+	dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
+        //SZ602479815BR
+        NSString *jsonUrl =[NSString stringWithFormat:@"http://rastreamentocorreios.com.br/classes/correio/?q=%@",@"SZ602479815BR"];
+        NSData *jsonData = [NSData dataWithContentsOfURL:[NSURL URLWithString:jsonUrl]];
+        
+        JSONDecoder *jsonKitDecoder = [JSONDecoder decoder];
+        NSDictionary *items = [jsonKitDecoder objectWithData:jsonData];
+        [superArray addObjectsFromArray:[items objectForKey:@"track"]];
+        NSLog(@"total items: %@", superArray);
+		dispatch_async(dispatch_get_main_queue(), ^{
+			[MBProgressHUD hideHUDForView:self.navigationController.view animated:YES];
+            [self.tableView reloadData];
+            self.title=[items objectForKey:@"status"];
+
+		});
+	});
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -108,12 +131,27 @@
     return YES;
 }
 */
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;   
+}
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [superArray count];
+}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *cellIdentifier = @"Cell";
+    CelulaSedex *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    NSDictionary *dict=[superArray objectAtIndex:indexPath.row];
+//    cell.labelAcao.text=[dict objectForKey:@"acao"];
+    cell.labelData.text=[dict objectForKey:@"data"];
+    cell.labelLocal.text=[dict objectForKey:@"local"];
+    cell.labelDetalhe.text=[dict objectForKey:@"detalhes"];
+    
+    return cell;
+}
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    DetailViewController *detailViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"detail"];
-    // Pass the selected object to the new view controller.
-    [self.navigationController pushViewController:detailViewController animated:YES];
+
 }
 
 @end

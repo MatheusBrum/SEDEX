@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface RootViewController : UITableViewController
+@interface RootViewController : UITableViewController{
+    NSString *codigo;
+    NSMutableArray *superArray;
+}
+@property (nonatomic,retain)    NSString *codigo;
 
 @end

@@ -17,6 +17,9 @@
 		84C0C20913BA39180037EF4F /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C0C20813BA39180037EF4F /* RootViewController.m */; };
 		84C0C20B13BA39180037EF4F /* DetailViewController.h in Resources */ = {isa = PBXBuildFile; fileRef = 84C0C20A13BA39180037EF4F /* DetailViewController.h */; };
 		84C0C20D13BA39180037EF4F /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C0C20C13BA39180037EF4F /* DetailViewController.m */; };
+		84C0C21513BA3BC40037EF4F /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C0C21413BA3BC40037EF4F /* JSONKit.m */; };
+		84C0C21F13BA40970037EF4F /* CelulaSedex.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C0C21E13BA40970037EF4F /* CelulaSedex.m */; };
+		84C0C22613BA44E00037EF4F /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C0C22513BA44DF0037EF4F /* MBProgressHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,17 +27,23 @@
 		84C0C1F213BA39180037EF4F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		84C0C1F413BA39180037EF4F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		84C0C1F613BA39180037EF4F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		84C0C1FA13BA39180037EF4F /* SEDEX-Info.plist */ = {isa = PBXFileReference; path = "SEDEX-Info.plist"; sourceTree = "<group>"; };
+		84C0C1FA13BA39180037EF4F /* SEDEX-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SEDEX-Info.plist"; sourceTree = "<group>"; };
 		84C0C1FC13BA39180037EF4F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		84C0C1FE13BA39180037EF4F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		84C0C20013BA39180037EF4F /* SEDEX-Prefix.pch */ = {isa = PBXFileReference; path = "SEDEX-Prefix.pch"; sourceTree = "<group>"; };
-		84C0C20113BA39180037EF4F /* SEDEXAppDelegate.h */ = {isa = PBXFileReference; path = SEDEXAppDelegate.h; sourceTree = "<group>"; };
+		84C0C20013BA39180037EF4F /* SEDEX-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SEDEX-Prefix.pch"; sourceTree = "<group>"; };
+		84C0C20113BA39180037EF4F /* SEDEXAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SEDEXAppDelegate.h; sourceTree = "<group>"; };
 		84C0C20213BA39180037EF4F /* SEDEXAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SEDEXAppDelegate.m; sourceTree = "<group>"; };
 		84C0C20513BA39180037EF4F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		84C0C20713BA39180037EF4F /* RootViewController.h */ = {isa = PBXFileReference; path = RootViewController.h; sourceTree = "<group>"; };
+		84C0C20713BA39180037EF4F /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		84C0C20813BA39180037EF4F /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		84C0C20A13BA39180037EF4F /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		84C0C20C13BA39180037EF4F /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		84C0C21313BA3BC40037EF4F /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		84C0C21413BA3BC40037EF4F /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		84C0C21D13BA40970037EF4F /* CelulaSedex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CelulaSedex.h; sourceTree = "<group>"; };
+		84C0C21E13BA40970037EF4F /* CelulaSedex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CelulaSedex.m; sourceTree = "<group>"; };
+		84C0C22413BA44DF0037EF4F /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		84C0C22513BA44DF0037EF4F /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +90,10 @@
 		84C0C1F813BA39180037EF4F /* SEDEX */ = {
 			isa = PBXGroup;
 			children = (
+				84C0C22413BA44DF0037EF4F /* MBProgressHUD.h */,
+				84C0C22513BA44DF0037EF4F /* MBProgressHUD.m */,
+				84C0C21313BA3BC40037EF4F /* JSONKit.h */,
+				84C0C21413BA3BC40037EF4F /* JSONKit.m */,
 				84C0C20113BA39180037EF4F /* SEDEXAppDelegate.h */,
 				84C0C20213BA39180037EF4F /* SEDEXAppDelegate.m */,
 				84C0C20413BA39180037EF4F /* MainStoryboard.storyboard */,
@@ -89,6 +102,8 @@
 				84C0C20A13BA39180037EF4F /* DetailViewController.h */,
 				84C0C20C13BA39180037EF4F /* DetailViewController.m */,
 				84C0C1F913BA39180037EF4F /* Supporting Files */,
+				84C0C21D13BA40970037EF4F /* CelulaSedex.h */,
+				84C0C21E13BA40970037EF4F /* CelulaSedex.m */,
 			);
 			path = SEDEX;
 			sourceTree = "<group>";
@@ -168,6 +183,9 @@
 				84C0C20313BA39180037EF4F /* SEDEXAppDelegate.m in Sources */,
 				84C0C20913BA39180037EF4F /* RootViewController.m in Sources */,
 				84C0C20D13BA39180037EF4F /* DetailViewController.m in Sources */,
+				84C0C21513BA3BC40037EF4F /* JSONKit.m in Sources */,
+				84C0C21F13BA40970037EF4F /* CelulaSedex.m in Sources */,
+				84C0C22613BA44E00037EF4F /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,7 +216,8 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_OBJCPP_ARC_ABI = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -223,7 +242,8 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_OBJCPP_ARC_ABI = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
