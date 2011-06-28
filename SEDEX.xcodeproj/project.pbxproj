@@ -1,0 +1,286 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84C0C1F313BA39180037EF4F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C0C1F213BA39180037EF4F /* UIKit.framework */; };
+		84C0C1F513BA39180037EF4F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C0C1F413BA39180037EF4F /* Foundation.framework */; };
+		84C0C1F713BA39180037EF4F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C0C1F613BA39180037EF4F /* CoreGraphics.framework */; };
+		84C0C1FD13BA39180037EF4F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84C0C1FB13BA39180037EF4F /* InfoPlist.strings */; };
+		84C0C1FF13BA39180037EF4F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C0C1FE13BA39180037EF4F /* main.m */; };
+		84C0C20313BA39180037EF4F /* SEDEXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C0C20213BA39180037EF4F /* SEDEXAppDelegate.m */; };
+		84C0C20613BA39180037EF4F /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84C0C20413BA39180037EF4F /* MainStoryboard.storyboard */; };
+		84C0C20913BA39180037EF4F /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C0C20813BA39180037EF4F /* RootViewController.m */; };
+		84C0C20B13BA39180037EF4F /* DetailViewController.h in Resources */ = {isa = PBXBuildFile; fileRef = 84C0C20A13BA39180037EF4F /* DetailViewController.h */; };
+		84C0C20D13BA39180037EF4F /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C0C20C13BA39180037EF4F /* DetailViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		84C0C1EE13BA39180037EF4F /* SEDEX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SEDEX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84C0C1F213BA39180037EF4F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		84C0C1F413BA39180037EF4F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		84C0C1F613BA39180037EF4F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		84C0C1FA13BA39180037EF4F /* SEDEX-Info.plist */ = {isa = PBXFileReference; path = "SEDEX-Info.plist"; sourceTree = "<group>"; };
+		84C0C1FC13BA39180037EF4F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		84C0C1FE13BA39180037EF4F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84C0C20013BA39180037EF4F /* SEDEX-Prefix.pch */ = {isa = PBXFileReference; path = "SEDEX-Prefix.pch"; sourceTree = "<group>"; };
+		84C0C20113BA39180037EF4F /* SEDEXAppDelegate.h */ = {isa = PBXFileReference; path = SEDEXAppDelegate.h; sourceTree = "<group>"; };
+		84C0C20213BA39180037EF4F /* SEDEXAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SEDEXAppDelegate.m; sourceTree = "<group>"; };
+		84C0C20513BA39180037EF4F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		84C0C20713BA39180037EF4F /* RootViewController.h */ = {isa = PBXFileReference; path = RootViewController.h; sourceTree = "<group>"; };
+		84C0C20813BA39180037EF4F /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		84C0C20A13BA39180037EF4F /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		84C0C20C13BA39180037EF4F /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84C0C1EB13BA39180037EF4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84C0C1F313BA39180037EF4F /* UIKit.framework in Frameworks */,
+				84C0C1F513BA39180037EF4F /* Foundation.framework in Frameworks */,
+				84C0C1F713BA39180037EF4F /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84C0C1E313BA39180037EF4F = {
+			isa = PBXGroup;
+			children = (
+				84C0C1F813BA39180037EF4F /* SEDEX */,
+				84C0C1F113BA39180037EF4F /* Frameworks */,
+				84C0C1EF13BA39180037EF4F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84C0C1EF13BA39180037EF4F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84C0C1EE13BA39180037EF4F /* SEDEX.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84C0C1F113BA39180037EF4F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84C0C1F213BA39180037EF4F /* UIKit.framework */,
+				84C0C1F413BA39180037EF4F /* Foundation.framework */,
+				84C0C1F613BA39180037EF4F /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84C0C1F813BA39180037EF4F /* SEDEX */ = {
+			isa = PBXGroup;
+			children = (
+				84C0C20113BA39180037EF4F /* SEDEXAppDelegate.h */,
+				84C0C20213BA39180037EF4F /* SEDEXAppDelegate.m */,
+				84C0C20413BA39180037EF4F /* MainStoryboard.storyboard */,
+				84C0C20713BA39180037EF4F /* RootViewController.h */,
+				84C0C20813BA39180037EF4F /* RootViewController.m */,
+				84C0C20A13BA39180037EF4F /* DetailViewController.h */,
+				84C0C20C13BA39180037EF4F /* DetailViewController.m */,
+				84C0C1F913BA39180037EF4F /* Supporting Files */,
+			);
+			path = SEDEX;
+			sourceTree = "<group>";
+		};
+		84C0C1F913BA39180037EF4F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84C0C1FA13BA39180037EF4F /* SEDEX-Info.plist */,
+				84C0C1FB13BA39180037EF4F /* InfoPlist.strings */,
+				84C0C1FE13BA39180037EF4F /* main.m */,
+				84C0C20013BA39180037EF4F /* SEDEX-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84C0C1ED13BA39180037EF4F /* SEDEX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84C0C21013BA39180037EF4F /* Build configuration list for PBXNativeTarget "SEDEX" */;
+			buildPhases = (
+				84C0C1EA13BA39180037EF4F /* Sources */,
+				84C0C1EB13BA39180037EF4F /* Frameworks */,
+				84C0C1EC13BA39180037EF4F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SEDEX;
+			productName = SEDEX;
+			productReference = 84C0C1EE13BA39180037EF4F /* SEDEX.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84C0C1E513BA39180037EF4F /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 84C0C1E813BA39180037EF4F /* Build configuration list for PBXProject "SEDEX" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 84C0C1E313BA39180037EF4F;
+			productRefGroup = 84C0C1EF13BA39180037EF4F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84C0C1ED13BA39180037EF4F /* SEDEX */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84C0C1EC13BA39180037EF4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84C0C1FD13BA39180037EF4F /* InfoPlist.strings in Resources */,
+				84C0C20613BA39180037EF4F /* MainStoryboard.storyboard in Resources */,
+				84C0C20B13BA39180037EF4F /* DetailViewController.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84C0C1EA13BA39180037EF4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84C0C1FF13BA39180037EF4F /* main.m in Sources */,
+				84C0C20313BA39180037EF4F /* SEDEXAppDelegate.m in Sources */,
+				84C0C20913BA39180037EF4F /* RootViewController.m in Sources */,
+				84C0C20D13BA39180037EF4F /* DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		84C0C1FB13BA39180037EF4F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84C0C1FC13BA39180037EF4F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		84C0C20413BA39180037EF4F /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84C0C20513BA39180037EF4F /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84C0C20E13BA39180037EF4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		84C0C20F13BA39180037EF4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84C0C21113BA39180037EF4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SEDEX/SEDEX-Prefix.pch";
+				INFOPLIST_FILE = "SEDEX/SEDEX-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		84C0C21213BA39180037EF4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SEDEX/SEDEX-Prefix.pch";
+				INFOPLIST_FILE = "SEDEX/SEDEX-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84C0C1E813BA39180037EF4F /* Build configuration list for PBXProject "SEDEX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84C0C20E13BA39180037EF4F /* Debug */,
+				84C0C20F13BA39180037EF4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84C0C21013BA39180037EF4F /* Build configuration list for PBXNativeTarget "SEDEX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84C0C21113BA39180037EF4F /* Debug */,
+				84C0C21213BA39180037EF4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84C0C1E513BA39180037EF4F /* Project object */;
+}
