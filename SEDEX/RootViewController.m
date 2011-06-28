@@ -58,8 +58,7 @@
 	hud.labelText = @"Loading";
 	
 	dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
-        //SZ602479815BR
-        NSString *jsonUrl =[NSString stringWithFormat:@"http://rastreamentocorreios.com.br/classes/correio/?q=%@",@"SZ602479815BR"];
+        NSString *jsonUrl =[NSString stringWithFormat:@"http://rastreamentocorreios.com.br/classes/correio/?q=%@",codigo];
         NSData *jsonData = [NSData dataWithContentsOfURL:[NSURL URLWithString:jsonUrl]];
         
         JSONDecoder *jsonKitDecoder = [JSONDecoder decoder];
